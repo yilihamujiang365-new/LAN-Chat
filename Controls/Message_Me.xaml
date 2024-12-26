@@ -1,0 +1,46 @@
+﻿<UserControl
+    x:Class="LAN_Chat.Controls.Message_Me"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:LAN_Chat.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="50"
+    d:DesignWidth="600"
+    mc:Ignorable="d">
+    <Grid x:Name="ContentGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <!--  发消息时间  -->
+        <TextBlock
+            Name="TimeBlock"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="12"
+            Text="1212" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Border
+                Grid.Column="1"
+                Margin="0,4,10,5"
+                Padding="10"
+                Background="Wheat"
+                CornerRadius="10">
+                <TextBox
+                    x:Name="TextBlock"
+                    Background="Wheat"
+                    BorderThickness="0"
+                    IsReadOnly="True"
+                    Text="" />
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
