@@ -1,0 +1,37 @@
+﻿<UserControl
+    x:Class="LAN_Chat.Controls.UserCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:LAN_Chat.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="50"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image
+            Name="UserIcon"
+            Grid.Column="0"
+            Margin="5,5,5,5"
+            Source="/picture/user.jpg" />
+        <StackPanel Grid.Column="1">
+            <TextBlock
+                x:Name="UserName"
+                FontSize="16"
+                Text="User1" />
+            <TextBlock
+                Name="UserIP"
+                FontSize="8"
+                Text="hello" />
+            <TextBlock
+                Name="UserState"
+                Background="#62a01c"
+                FontSize="8"
+                Text="Online" />
+        </StackPanel>
+    </Grid>
+</UserControl>

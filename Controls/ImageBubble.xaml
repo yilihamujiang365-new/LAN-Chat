@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="LAN_Chat.Controls.ImageBubble"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:LAN_Chat.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="150"
+    d:DesignWidth="200"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Border
+            Width="200"
+            Height="150"
+            Padding="5"
+            Background="Wheat"
+            CornerRadius="10">
+            <Image x:Name="ImageControl" Stretch="UniformToFill" />
+        </Border>
+    </Grid>
+</UserControl>
